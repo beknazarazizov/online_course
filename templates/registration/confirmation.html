@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="{% url 'blog:confirm' %}" method="post">
+    {% csrf_token %}
+    <h2>Check your email and confirm code!</h2>
+    <input type="number" name="code">
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

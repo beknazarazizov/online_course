@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Teacher Information{% endblock title %}
+{% block teacher_detail %}
+<span>
+    <img style="height: 200px; width: 200px; margin: 25px 10px 10px 40%; border-radius: 5px"
+         src="{{ teacher.image.url }}" alt="">
+</span>
+
+<span style="display: flex; margin: 15px">
+    <h1>Teacher:</h1>
+    <h1 style="color: green">{{ teacher.full_name }}</h1>
+</span>
+
+<span style="display: flex; margin: 15px">
+    <h1>Profession:</h1>
+    <h1 style="color: green">{{ teacher.specialization }}</h1>
+</span>
+
+<span style="display: flex; margin: 15px">
+    <h1>Editional_work:</h1>
+    <h1 style="color: green">{{ teacher.additional_work }}</h1>
+</span>
+
+<span style="display: flex; margin: 15px">
+    <h1>Bio:</h1>
+    <h1 style="color: green">{{ teacher.description }}</h1>
+</span>
+
+
+{% endblock teacher_detail %}

@@ -1,0 +1,8 @@
+1 Base html qilindi
+2 Postgresql database bilan connection qilindi
+3 course,blog,comment,author,Teacher lar uchun modellar yaraatildi
+4 course,blog,comment,author,Teacher lar uchun view yozildi
+5 base home qisimida  tel qilish va email orqali habar yubori
+6 home page ko`rinishi categoriya qisimi qilindi
+7 course blog qisimlarini detail qisimlari uuchun viewvlar yozildi
+8 authentication socila_django Google Tvitter orqali kirish qilindi

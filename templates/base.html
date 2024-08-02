@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock title %}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'app/img/logo.png.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'app/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'app/css/style.css'%}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center py-4 px-xl-5">
+            <div class="col-lg-3">
+                <a href="" class="text-decoration-none">
+                    <h1 class="m-0"><span class="text-primary">W</span>Global</h1>
+                </a>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <a href="#"><i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i> </a>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Our Office</h6>
+                        <small>125 Beruny Street, Toshkent, Uzb</small>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <a href="mailto:beknazarazizov@gmail.com"><i class="fa fa-2x fa-envelope text-primary mr-3"></i> </a>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Email Us</h6>
+                        <a href="mailto:beknazarazizov@gmail.com">beknazarazizov@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="d-inline-flex align-items-center">
+                    <a href="tel:+998944121399"> <i class="fa fa-2x fa-phone text-primary mr-3"></i></a>
+                    <div class="text-left">
+                        <h6 class="font-weight-semi-bold mb-1">Call Us</h6>
+                        <a href="tel:+998944121399">+998944121399</a>
+
+                  </div>
+                </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    
+    {% include 'navbar.html' %}
+    
+    {% block main_content %}
+    {% endblock main_content %}
+    {% block courses %}
+    {% endblock courses %}
+    {% block teacher %}
+    {% endblock teacher %}
+    {% block blog_list %}
+    {% endblock blog_list %}
+    {% block blog_detail %}
+    {% endblock blog_detail %}
+    {% block about %}
+    {% endblock about %}
+    {% block contact %}
+    {% endblock contact %}
+    {% block detailc %}
+    {% endblock detailc %}
+    {% block teacher_detail %}
+    {% endblock teacher_detail %}
+    
+    {% include 'footer.html' %}
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'app/lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'app/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'app/mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'app/mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'app/js/main.js' %}"></script>
+</body>
+
+</html>

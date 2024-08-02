@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block detailc %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+          .video-card video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+        }
+        .video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .video-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-info h2 {
+            margin-top: 0;
+        }
+        
+    </style>
+</head>
+<body>
+        
+    <div class="video-container">
+{#        <div class="video-card">#}
+{#        <div class="video-wrapper">#}
+{#            <video src="{{ course.video.url }}" type="video/mp4" controls></video>#}
+{#        </div>#}
+        <video controls muted width="560px" type="video" name="video" height="315px" src="{{ course.video.url }}" >    <iframe  frameborder="0" allowfullscreen></iframe></video>
+    </div>
+
+    <div class="video-info">
+        <h2>Course Video</h2>
+        <p><strong>Description:</strong> {{ course.description }}</p>
+        <p><strong>Title:</strong> {{ course.title}}</p>
+        <p><strong>Author:</strong> {{ course.teachers }}</p>
+    </div>
+
+</body>
+</html>
+{% endblock detailc %}
